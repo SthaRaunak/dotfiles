@@ -1,0 +1,18 @@
+import = [
+  "/Users/raunak/.npm/_npx/808b709e6234a442/node_modules/alacritty-themes/themes/Gruvbox-Dark.toml"
+]
+
+[window]
+decorations = "Buttonless"
+opacity = 0.95
+blur = true
+option_as_alt = "Both"
+
+[window.padding]
+  x = 10
+  y = 10
+  
+[font]
+size = 16
+  [font.normal]
+  family = "JetBrainsMono Nerd Font"

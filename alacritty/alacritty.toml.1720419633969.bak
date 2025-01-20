@@ -1,0 +1,14 @@
+[window] 
+padding.x = 15
+padding.y = 15
+
+decorations = "Buttonless"
+
+opacity = 0.9
+blur = true
+
+option_as_alt = "Both"
+
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+size= 16
