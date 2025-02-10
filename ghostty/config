@@ -1,0 +1,32 @@
+
+#----------------------------------------------------
+# Window
+#----------------------------------------------------
+
+window-padding-x = 10
+window-padding-balance = true
+
+background = 1C2021
+background-opacity = 0.97
+background-blur-radius = 20
+
+theme = GruvboxDarkHard 
+
+#----------------------------------------------------
+# Font
+#----------------------------------------------------
+
+font-size = 14
+font-family = Berkeley Mono
+font-style = regular 
+
+
+
+
+shell-integration-features = no-cursor,sudo,no-title
+
+
+
+# Custom keybinds & Config (super represents cmd key on mac)
+
+keybind = cmd+s>r=reload_config

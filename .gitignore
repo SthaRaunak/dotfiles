@@ -1,0 +1,17 @@
+tags
+test.sh
+.luarc.json
+
+spell/
+lazy-lock.json
+
+.DS_Store
+configstore
+
+
+nvim-kickstart-temp
+
+
+
+
+
