@@ -202,12 +202,8 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-[[on-window-detected]]
-if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace V'
-
-
 # little buggy when full screen on youtube
+
 #[[on-window-detected]]
 #if.app-id = 'com.apple.Safari'
 #run = 'move-node-to-workspace B'
@@ -219,5 +215,15 @@ run = 'move-node-to-workspace D'
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
 run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.iBooksX'
+run = 'move-node-to-workspace S'
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace A'
+
+
 
 
