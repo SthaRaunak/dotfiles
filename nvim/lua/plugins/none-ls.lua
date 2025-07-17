@@ -18,18 +18,24 @@ return {
         'shfmt', -- Shell formatter
         'checkmake', -- linter for Makefiles
         'ruff', -- Python linter and formatter
+        'clang_format', -- C/C++ formatter
+        -- PHP
+        'phpcs', -- PHP linter
+        'php-cs-fixer', -- PHP formatter
       },
       automatic_installation = true,
     }
 
     local sources = {
       diagnostics.checkmake,
-      formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown' } },
+      formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown', 'jsx', 'tsx', 'ts', 'js' } },
       formatting.stylua,
       formatting.shfmt.with { args = { '-i', '4' } },
       formatting.terraform_fmt,
       require('none-ls.formatting.ruff').with { extra_args = { '--extend-select', 'I' } },
       require 'none-ls.formatting.ruff_format',
+      formatting.clang_format.with { filetypes = { 'c', 'cpp', 'h', 'hpp' } },
+      formatting.phpcsfixer.with { filetypes = { 'php' } },
     }
 
     local augroup = vim.api.nvim_create_augroup('LspFormatting', {})

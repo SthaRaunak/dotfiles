@@ -9,6 +9,7 @@ return { -- Highlight, edit, and navigate code
       'c',
       'python',
       'javascript',
+      'php',
       'typescript',
       'vimdoc',
       'vim',
